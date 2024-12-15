@@ -42,5 +42,5 @@ testMazeBtn?.addEventListener("click", () => {
 
   setTimeout(() => {
     alert(message);
-  }, 0);
+  }, 20);
 });

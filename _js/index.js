@@ -34,5 +34,5 @@ testMazeBtn === null || testMazeBtn === void 0 ? void 0 : testMazeBtn.addEventLi
     const message = controller.handleEscapeTest();
     setTimeout(() => {
         alert(message);
-    }, 0);
+    }, 20);
 });

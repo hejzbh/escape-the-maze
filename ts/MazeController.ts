@@ -22,6 +22,8 @@ export class MazeController implements MazeControllerInterface {
   }
 
   handleCellClick(row: number, col: number) {
+    if (this.maze.escaped) return;
+
     this.maze.toggleCell(row, col);
   }
 

@@ -1,3 +1,5 @@
+const startImgSrc = "https://www.freeiconspng.com/thumbs/pin-png/pin-png-24.png";
+const finishImgSrc = "https://static.vecteezy.com/system/resources/thumbnails/013/796/134/small_2x/comic-lettering-finish-comic-speech-bubble-with-emotional-text-finish-bright-dynamic-cartoon-illustration-in-retro-pop-art-style-comic-text-sound-effects-png.png";
 export class MazeView {
     constructor() {
         this.mazeElement = document.querySelector(".maze-grid");
@@ -25,11 +27,8 @@ export class MazeView {
                 if (isStartPosition || isFinishPosition) {
                     const img = document.createElement("img");
                     img.classList.add("position-img");
-                    img.src = isStartPosition
-                        ? "https://www.freeiconspng.com/thumbs/pin-png/pin-png-24.png"
-                        : "https://static.vecteezy.com/system/resources/thumbnails/013/796/134/small_2x/comic-lettering-finish-comic-speech-bubble-with-emotional-text-finish-bright-dynamic-cartoon-illustration-in-retro-pop-art-style-comic-text-sound-effects-png.png";
+                    img.src = isStartPosition ? startImgSrc : finishImgSrc;
                     cellElement.appendChild(img);
-                    cellElement.style.padding = "0";
                 }
                 else {
                     // Add click event to toggle cell state between free (transparent) and blocked (red)

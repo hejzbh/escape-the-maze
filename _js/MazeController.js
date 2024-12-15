@@ -11,6 +11,8 @@ export class MazeController {
         this.view.renderGrid(this.maze.grid, this.handleCellClick.bind(this));
     }
     handleCellClick(row, col) {
+        if (this.maze.escaped)
+            return;
         this.maze.toggleCell(row, col);
     }
     handleEscapeTest() {

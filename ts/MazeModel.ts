@@ -20,6 +20,7 @@ class Maze implements MazeInterface {
   constructor(rows: number, cols: number) {
     this.rows = rows;
     this.cols = cols;
+    this.escaped = false;
     this.grid = this.createGrid();
   }
 

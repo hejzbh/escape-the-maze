@@ -3,6 +3,7 @@ class Maze {
         this.escaped = false;
         this.rows = rows;
         this.cols = cols;
+        this.escaped = false;
         this.grid = this.createGrid();
     }
     // Creates a grid with all cells set to 0 (empty space)

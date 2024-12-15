@@ -22,7 +22,10 @@ export class MazeController implements MazeControllerInterface {
   }
 
   handleCellClick(row: number, col: number) {
-    if (this.maze.escaped) return;
+    if (this.maze.escaped) {
+      alert("Create new maze");
+      return;
+    }
 
     this.maze.toggleCell(row, col);
   }
